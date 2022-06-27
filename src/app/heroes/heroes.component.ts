@@ -12,11 +12,11 @@ import { MessageService } from '../message.service';
 export class HeroesComponent implements OnInit {
 
   heroes : Hero[] = [];
-  selectedHero?: Hero;
+  /*selectedHero?: Hero;
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
     this.messageService.add(`HeroesComponent: selected Hero id=${hero.id}`)
-  }
+  } */
   /* 1. 声明了一个私有 heroService 属性，2. 把它标记为一个 HeroService 的注入点。 */
   constructor(private heroService: HeroService, private messageService: MessageService) {}
 

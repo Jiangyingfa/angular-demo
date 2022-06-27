@@ -15,6 +15,8 @@ const routes: Routes = [
   {path: 'heroes', component: HeroesComponent},
   {path: 'dashboard', component: DashboardComponent},
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },//添加默认路由
+  { path: 'detail/:id', component: HeroDetailComponent },
+  { path: 'detail/:hero', component: HeroDetailComponent }
 ];
 
 /* @NgModule 元数据会初始化路由器，并开始监听浏览器地址的变化 */
