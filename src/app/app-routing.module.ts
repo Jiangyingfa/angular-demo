@@ -12,8 +12,8 @@ const routes: Routes = [
   /* path: 用来匹配浏览器地址栏中 URL 的字符串
      component: 导航到该路由时，路由器应该创建的组件
    */
-  {path: 'heroes', component: HeroesComponent},
-  {path: 'dashboard', component: DashboardComponent},
+  { path: 'heroes', component: HeroesComponent },
+  { path: 'dashboard', component: DashboardComponent },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },//添加默认路由
   { path: 'detail/:id', component: HeroDetailComponent },
   { path: 'detail/:hero', component: HeroDetailComponent }
