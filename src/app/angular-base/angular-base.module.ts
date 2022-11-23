@@ -7,6 +7,7 @@ import { CommandComponent } from './command/command.component';
 import { DiComponent } from './di/di.component';
 import { ParentComponent } from './component-interact/parent/parent.component';
 import { ChildCountDownComponent } from './component-interact/child-count-down/child-count-down.component';
+import { ParentViewChildComponent } from './component-interact/parent-view-child/parent-view-child.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ChildCountDownComponent } from './component-interact/child-count-down/c
     CommandComponent,
     DiComponent,
     ParentComponent,
-    ChildCountDownComponent
+    ChildCountDownComponent,
+    ParentViewChildComponent
   ],
   imports: [
     CommonModule,

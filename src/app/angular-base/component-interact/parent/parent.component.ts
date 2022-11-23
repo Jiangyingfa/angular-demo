@@ -12,6 +12,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentComponent implements OnInit {
 
+  /**
+   * 本地变量的交互方式，只适用于父组件与子组件的链接都在父组件的情况
+   */
   constructor() { }
 
   ngOnInit(): void {

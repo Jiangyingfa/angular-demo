@@ -22,7 +22,7 @@ export class ChildCountDownComponent implements OnDestroy {
 
   stop() {
     this.clearTimer();
-    this.message = `T-${this.seconds} seconds`;
+    this.message = `Holding T-${this.seconds} seconds`;
   }
 
   private clearTimer() {
@@ -37,7 +37,6 @@ export class ChildCountDownComponent implements OnDestroy {
       if (this.seconds === 0) {
         this.message = 'Blass off!'
         this.clearTimer();
-        // this.seconds = 10;
       } else {
         if (this.seconds < 0) { this.seconds = 10; }
         this.message = `T-${this.seconds} seconds and counting`;
