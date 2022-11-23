@@ -2,11 +2,10 @@ import { NgModule } from '@angular/core';
 /* 导入 RouterModule 和 Routes，以便该应用具有路由功能 */
 import { RouterModule, Routes } from '@angular/router';
 /* 对 CommonModule 的引用和 declarations 数组不是必要的，因此它们不再是 AppRoutingModule 的一部分 */
-import { CommonModule } from '@angular/common';
 /* 告诉路由器要去什么地方 */
-import { HeroesComponent } from './heroes/heroes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { HeroesComponent } from './heroes/heroes.component';
 
 const routes: Routes = [
   /* path: 用来匹配浏览器地址栏中 URL 的字符串
@@ -16,7 +15,12 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },//添加默认路由
   { path: 'detail/:id', component: HeroDetailComponent },
-  { path: 'detail/:hero', component: HeroDetailComponent }
+  { path: 'detail/:hero', component: HeroDetailComponent },
+  {
+    path: 'angular-base',
+    loadChildren: () =>
+      import('./angular-base/angular-base.module').then(m => m.AngularBaseModule),
+  },
 ];
 
 /* @NgModule 元数据会初始化路由器，并开始监听浏览器地址的变化 */

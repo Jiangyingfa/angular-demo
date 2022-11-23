@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build --base-href=/dist/",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "lint": "ng lint && npx stylelint '**/*.scss' --fix"
   },
   "private": true,
   "dependencies": {
