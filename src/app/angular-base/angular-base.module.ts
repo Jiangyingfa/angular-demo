@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { AngularBaseRoutingModule } from './angular-base-routing.module';
 import { BindingComponent } from './binding/binding.component';
+import { CommandComponent } from './command/command.component';
 
 
 @NgModule({
   declarations: [
-    BindingComponent
+    BindingComponent,
+    CommandComponent
   ],
   imports: [
     CommonModule,
