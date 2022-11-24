@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ParentComponent } from './parent.component';
+import { CountDownTimerComponent } from './count-down-timer.component';
 
-describe('ParentComponent', () => {
-  let component: ParentComponent;
-  let fixture: ComponentFixture<ParentComponent>;
+describe('CountDownTimerComponent', () => {
+  let component: CountDownTimerComponent;
+  let fixture: ComponentFixture<CountDownTimerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ParentComponent ]
+      declarations: [ CountDownTimerComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ParentComponent);
+    fixture = TestBed.createComponent(CountDownTimerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

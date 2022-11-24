@@ -1,13 +1,15 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
 import { AngularBaseRoutingModule } from './angular-base-routing.module';
 import { BindingComponent } from './binding/binding.component';
 import { CommandComponent } from './command/command.component';
+import { CountDownParentComponent } from './component-interact/by-local-variables/count-down-parent/count-down-parent.component';
+import { AstronautComponent } from './component-interact/by-service/astronaut/astronaut.component';
+import { MissionControlComponent } from './component-interact/by-service/mission-control/mission-control.component';
+import { CountDownParentVcComponent } from './component-interact/by-view-child/count-down-parent-vc/count-down-parent-vc.component';
+import { CountDownTimerComponent } from './component-interact/count-down-timer/count-down-timer.component';
 import { DiComponent } from './di/di.component';
-import { ParentComponent } from './component-interact/parent/parent.component';
-import { ChildCountDownComponent } from './component-interact/child-count-down/child-count-down.component';
-import { ParentViewChildComponent } from './component-interact/parent-view-child/parent-view-child.component';
 
 
 @NgModule({
@@ -15,9 +17,11 @@ import { ParentViewChildComponent } from './component-interact/parent-view-child
     BindingComponent,
     CommandComponent,
     DiComponent,
-    ParentComponent,
-    ChildCountDownComponent,
-    ParentViewChildComponent
+    MissionControlComponent,
+    AstronautComponent,
+    CountDownParentComponent,
+    CountDownParentVcComponent,
+    CountDownTimerComponent
   ],
   imports: [
     CommonModule,

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ChildCountDownComponent } from './child-count-down.component';
+import { AstronautComponent } from './astronaut.component';
 
-describe('ChildCountDownComponent', () => {
-  let component: ChildCountDownComponent;
-  let fixture: ComponentFixture<ChildCountDownComponent>;
+describe('AstronautComponent', () => {
+  let component: AstronautComponent;
+  let fixture: ComponentFixture<AstronautComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ChildCountDownComponent ]
+      declarations: [ AstronautComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ChildCountDownComponent);
+    fixture = TestBed.createComponent(AstronautComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

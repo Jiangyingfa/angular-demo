@@ -1,20 +1,20 @@
 import { AfterViewInit, Component, ViewChild } from '@angular/core';
-import { ChildCountDownComponent } from '../child-count-down/child-count-down.component';
+import { CountDownTimerComponent } from '../../count-down-timer/count-down-timer.component';
 
 @Component({
-  selector: 'app-parent-view-child',
+  selector: 'app-count-down-parent-vc',
   template: `
   <h3>Countdown to Liftoff</h3>
   <button (click)="start()">start</button>
   <button (click)="stop()">stop</button>
   <h6>{{seconds()}}</h6>
-  <app-child-count-down></app-child-count-down>
+  <app-count-down-timer></app-count-down-timer>
   `
 })
-export class ParentViewChildComponent implements AfterViewInit {
+export class CountDownParentVcComponent implements AfterViewInit {
 
-  @ViewChild(ChildCountDownComponent)
-  private timerComponent!: ChildCountDownComponent;
+  @ViewChild(CountDownTimerComponent)
+  private timer!: CountDownTimerComponent;
 
   constructor() { }
 
@@ -22,11 +22,11 @@ export class ParentViewChildComponent implements AfterViewInit {
     // Redefine `seconds()` to get from the `CountdownTimerComponent.seconds` ...
     // but wait a tick first to avoid one-time devMode
     // unidirectional-data-flow-violation error
-    setTimeout(() => this.seconds = () => this.timerComponent.seconds, 0);
+    setTimeout(() => this.seconds = () => this.timer.seconds, 0);
   }
 
   seconds() { return 0; }
-  start() { this.timerComponent.start(); }
-  stop() { this.timerComponent.stop(); }
+  start() { this.timer.start(); }
+  stop() { this.timer.stop(); }
 
 }

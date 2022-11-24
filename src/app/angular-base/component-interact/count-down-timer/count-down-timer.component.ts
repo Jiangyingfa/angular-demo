@@ -1,10 +1,10 @@
 import { Component, OnDestroy } from '@angular/core';
 
 @Component({
-  selector: 'app-child-count-down',
+  selector: 'app-count-down-timer',
   template: '<p>{{message}}</p>'
 })
-export class ChildCountDownComponent implements OnDestroy {
+export class CountDownTimerComponent implements OnDestroy {
 
   message = '';
   intervalId = 0;

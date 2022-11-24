@@ -1,20 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 
+
+/**
+   * 本地变量的交互方式，只适用于父组件与子组件的链接都在父组件的情况
+   */
 @Component({
-  selector: 'app-parent',
+  selector: 'app-count-down-parent',
   template: `
   <h3>Countdown to Liftoff</h3>
   <button (click)="timer.start()">start</button>
   <button (click)="timer.stop()">stop</button>
   <h5>{{timer.seconds}}</h5>
-  <app-child-count-down #timer></app-child-count-down>
+  <app-count-down-timer #timer></app-count-down-timer>
   `
 })
-export class ParentComponent implements OnInit {
+export class CountDownParentComponent implements OnInit {
 
-  /**
-   * 本地变量的交互方式，只适用于父组件与子组件的链接都在父组件的情况
-   */
   constructor() { }
 
   ngOnInit(): void {
