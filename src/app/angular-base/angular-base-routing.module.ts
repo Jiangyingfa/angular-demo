@@ -6,6 +6,7 @@ import { CountDownParentComponent } from './component-interact/by-local-variable
 import { MissionControlComponent } from './component-interact/by-service/mission-control/mission-control.component';
 import { CountDownParentVcComponent } from './component-interact/by-view-child/count-down-parent-vc/count-down-parent-vc.component';
 import { DiComponent } from './di/di.component';
+import { DynamicComponentComponent } from './dynamic-component/dynamic-component.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,7 @@ const routes: Routes = [
       { path: 'count-down-lv', component: CountDownParentComponent },
       { path: 'count-down-vc', component: CountDownParentVcComponent },
       { path: 'mission-control', component: MissionControlComponent },
+      { path: 'dynamic-component', component: DynamicComponentComponent },
     ]
   },
 ];

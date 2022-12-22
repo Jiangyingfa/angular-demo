@@ -10,6 +10,9 @@ import { MissionControlComponent } from './component-interact/by-service/mission
 import { CountDownParentVcComponent } from './component-interact/by-view-child/count-down-parent-vc/count-down-parent-vc.component';
 import { CountDownTimerComponent } from './component-interact/count-down-timer/count-down-timer.component';
 import { DiComponent } from './di/di.component';
+import { DynamicComponentComponent } from './dynamic-component/dynamic-component.component';
+import { AdDirective } from './dynamic-component/ad.directive';
+import { AdBannerComponent } from './dynamic-component/ad-banner/ad-banner.component';
 
 
 @NgModule({
@@ -21,7 +24,10 @@ import { DiComponent } from './di/di.component';
     AstronautComponent,
     CountDownParentComponent,
     CountDownParentVcComponent,
-    CountDownTimerComponent
+    CountDownTimerComponent,
+    DynamicComponentComponent,
+    AdDirective,
+    AdBannerComponent
   ],
   imports: [
     CommonModule,
